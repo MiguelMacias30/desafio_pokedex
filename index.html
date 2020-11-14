@@ -12,11 +12,27 @@
     <h1>Pokedex</h1>
     <div id="pokemones"></div>
     <div>
-      <button class="btn btn-success" id="btn">mas pokemones</button>
+      <button class="btn btn-success" id="btn">quiero ver mas pokemon</button>
     </div>
 
-    <div class="modal fade" id="pokeModal" tabindex="-1" aria-labelledby>
-
+    <div class="modal fade" id="pokeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+          </div>
+          <div class="modal-body">
+            <p>Tipo: <span class="type"></span></p>
+            <p>Generacion: <span class="generations"></span></p>
+            <p>Habilidades: <span class="habilities"></span></p>
+            <p>Movimientos: <span class="moves"></span></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
